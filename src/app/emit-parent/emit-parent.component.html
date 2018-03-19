@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let items of myObj">
+    <app-emit-child [sendObj]="items" (sendMethod)="myDelete($event)"></app-emit-child>
+  </li>
+</ul>
