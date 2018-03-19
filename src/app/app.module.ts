@@ -15,9 +15,9 @@ import { LearnServicesComponent } from './learn-services/learn-services.componen
 @NgModule({
   declarations: [
     AppComponent,
-    EmitParentComponent,
-    EmitChildComponent,
-    LearnServicesComponent   
+    // EmitParentComponent,
+    // EmitChildComponent,
+    // LearnServicesComponent
   ],
   imports: [
     BrowserModule,
