@@ -31,8 +31,21 @@ const routes: Routes = [
     path: 'user-network',
     loadChildren: 'app/user/network/user-network.module#UserNetworkModule'
   },
+  {
+    path: 'user-activity',
+    loadChildren: 'app/user/activity/user-activity.module#UserActivityModule'
+  },
+  {
+    path: 'user-ai',
+    loadChildren: 'app/user/ai/user-ai.module#UserAiModule'
+  },
+  {
+    path: 'user-reports',
+    loadChildren: 'app/user/reports/user-reports.module#UserReportsModule'
+  },
   { path: '**', redirectTo: '/', pathMatch: 'full' } // not found handler
 ];
+
 
 
 @NgModule({
