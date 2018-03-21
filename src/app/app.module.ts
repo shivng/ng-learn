@@ -11,10 +11,12 @@ import { AppComponent } from './app.component';
 import { EmitParentComponent } from './emit-parent/emit-parent.component';
 import { EmitChildComponent } from './emit-child/emit-child.component';
 import { LearnServicesComponent } from './learn-services/learn-services.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     // EmitParentComponent,
     // EmitChildComponent,
     // LearnServicesComponent
