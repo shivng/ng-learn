@@ -7,4 +7,4 @@ import { UserActivityComponent } from './user-activity.component';
   imports: [CommonModule, RouterModule.forChild(UserActivityRoutes)],
   declarations: [UserActivityComponent]
 })
-export class UserActivityModule {}
+export default class UserActivityModule {}

@@ -33,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: 'user-activity',
-    loadChildren: 'app/user/activity/user-activity.module#UserActivityModule'
+    loadChildren: 'app/user/activity/user-activity.module'
   },
   {
     path: 'user-ai',
