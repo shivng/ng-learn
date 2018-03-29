@@ -5,11 +5,17 @@ import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
   templateUrl: './user-dashboard.component.html'
 })
 export class UserDashboardComponent implements AfterViewInit {
-  @ViewChild('tref', { read: ElementRef })
-  tref: ElementRef;
+	colors = ['RED', 'CYAN', 'BLUE'];
+	@ViewChild('tref') trefText;
 
-  ngAfterViewInit(): void {
-    this.tref.nativeElement.textContent = 'set new value';
-    console.log(this.tref.nativeElement.textContent);
-  }
+	ngAfterViewInit(): void {
+		console.log(this.trefText.nativeElement.textContent);
+		this.trefText.nativeElement.textContent = 'set new value';
+	}
+
+	getData(mob : number, stat : string, cnt: string) {
+		console.log(mob);
+		console.log(stat);
+		console.log(cnt);
+	}
 }

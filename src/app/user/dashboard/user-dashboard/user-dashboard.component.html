@@ -5,3 +5,29 @@
 
 <div #myDiv>lorem import moduleName from 'module';</div>
 
+
+<select #myColor (change) = "setData(myColor.value)">
+	<option *ngFor = "let color of colors">
+		{{color}}
+	</option>
+</select>
+
+
+<p [style.color] = "myColor.value"> Hello World!</p>
+
+
+<br /><br /><br /><br /><br />
+
+
+Mobile Number: <input type="text" #mobile placeholder="Enter Mobile Number"> <br/>
+Enter State: <input type="text" #state> <br/>
+Enter Country: <input type="text" #country> <br/>
+
+<button (click)="getData(mobile.value, state.value, country.value)">Get Data</button>
+
+<br /><br /><br /><br /><br />
+
+<br/>{{mobile.placeholder}}: {{mobile.value}}
+<br/>{{mobile.type}}
+<br/>{{state.value}}
+<br/>{{country.value}}
