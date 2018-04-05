@@ -4,9 +4,14 @@ import { RouterModule } from '@angular/router';
 import { UserNetworkRoutes } from './user-network.routes';
 import { UserNetworkComponent } from './user-network/user-network.component';
 import { FormsModule } from '@angular/forms';
+import { BluecoloredDirective } from './bluecolored.directive';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, RouterModule.forChild(UserNetworkRoutes)],
-  declarations: [UserNetworkComponent]
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterModule.forChild(UserNetworkRoutes)
+  ],
+  declarations: [UserNetworkComponent, BluecoloredDirective]
 })
 export class UserNetworkModule {}

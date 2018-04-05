@@ -18,6 +18,7 @@ import { UserDashboardComponent } from './user/dashboard/user-dashboard/user-das
 import { UserDashboardModule } from './user/dashboard/user-dashboard.module';
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -51,7 +52,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
+    HeaderComponent
     // EmitParentComponent,
     // EmitChildComponent,
     // LearnServicesComponent
